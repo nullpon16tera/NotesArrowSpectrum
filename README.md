@@ -7,6 +7,7 @@
 ## 依存Mod
 
 - SiraUtil
+- BeatSaberMarkupLanguage
 
 下記画像のところのEnable押すだけで機能します。
 
