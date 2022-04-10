@@ -1,14 +1,14 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
-  "id": "NotesArrowSpectrum",
-  "name": "NotesArrowSpectrum",
-  "author": "",
+  "id": "NotesSpectrum",
+  "name": "NotesSpectrum",
+  "author": "nullponvr",
   "version": "0.0.1",
   "description": "",
   "gameVersion": "1.20.0",
   "dependsOn": {
     "BSIPA": "^4.2.2",
     "SiraUtil": "^3.0.6",
-    "BeatSaberMarkupLanguage": "1.6.3"
+    "BeatSaberMarkupLanguage": "^1.6.3"
   }
 }

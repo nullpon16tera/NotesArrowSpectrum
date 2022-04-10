@@ -1,4 +1,4 @@
-﻿/*
+﻿using System;
 using System.Runtime.CompilerServices;
 using IPA.Config.Stores;
 
@@ -8,7 +8,9 @@ namespace NotesArrowSpectrum.Configuration
     internal class PluginConfig
     {
         public static PluginConfig Instance { get; set; }
-        public virtual int IntValue { get; set; } = 42; // Must be 'virtual' if you want BSIPA to detect a value change and save the config automatically.
+        public virtual bool Enable { get; set; } = false; // Must be 'virtual' if you want BSIPA to detect a value change and save the config automatically.
+
+        public event Action<PluginConfig> OnReloaded;
 
         /// <summary>
         /// This is called whenever BSIPA reads the config from disk (including when file changes are detected).
@@ -16,6 +18,7 @@ namespace NotesArrowSpectrum.Configuration
         public virtual void OnReload()
         {
             // Do stuff after config is read from disk.
+            this.OnReloaded?.Invoke(this);
         }
 
         /// <summary>
@@ -32,7 +35,7 @@ namespace NotesArrowSpectrum.Configuration
         public virtual void CopyFrom(PluginConfig other)
         {
             // This instance's members populated from other
+            this.Enable = other.Enable;
         }
     }
 }
-*/
