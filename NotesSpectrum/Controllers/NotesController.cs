@@ -1,4 +1,4 @@
-﻿using NotesArrowSpectrum.Utilities;
+﻿using NotesSpectrum.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -6,7 +6,7 @@ using IPA.Loader;
 using UnityEngine;
 using Zenject;
 
-namespace NotesArrowSpectrum.Controllers
+namespace NotesSpectrum.Controllers
 {
     public class NotesController : MonoBehaviour, IInitializable
     {

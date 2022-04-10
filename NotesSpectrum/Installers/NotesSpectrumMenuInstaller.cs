@@ -1,8 +1,8 @@
-﻿using NotesArrowSpectrum.Views;
+﻿using NotesSpectrum.Views;
 using SiraUtil;
 using Zenject;
 
-namespace NotesArrowSpectrum.Installers
+namespace NotesSpectrum.Installers
 {
     public class NotesSpectrumMenuInstaller : MonoInstaller
     {

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using IPA.Config.Stores;
 
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
-namespace NotesArrowSpectrum.Configuration
+namespace NotesSpectrum.Configuration
 {
     internal class PluginConfig
     {

@@ -15,7 +15,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-namespace NotesArrowSpectrum.AudioSpectrums
+namespace NotesSpectrum.AudioSpectrums
 {
     public class AudioSpectrum : MonoBehaviour
     {

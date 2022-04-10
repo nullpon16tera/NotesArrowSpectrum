@@ -1,11 +1,11 @@
-﻿using NotesArrowSpectrum.Installers;
+﻿using NotesSpectrum.Installers;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
 using SiraUtil.Zenject;
 using IPALogger = IPA.Logging.Logger;
 
-namespace NotesArrowSpectrum
+namespace NotesSpectrum
 {
     [Plugin(RuntimeOptions.DynamicInit)]
     public class Plugin

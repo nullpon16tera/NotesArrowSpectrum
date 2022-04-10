@@ -1,8 +1,8 @@
-﻿using NotesArrowSpectrum.AudioSpectrums;
-using NotesArrowSpectrum.Controllers;
+﻿using NotesSpectrum.AudioSpectrums;
+using NotesSpectrum.Controllers;
 using Zenject;
 
-namespace NotesArrowSpectrum.Installers
+namespace NotesSpectrum.Installers
 {
     /// <summary>
     /// Monobehaviours (scripts) are added to GameObjects.

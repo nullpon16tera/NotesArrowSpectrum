@@ -2,7 +2,7 @@
 using System.Reflection;
 using UnityEngine;
 
-namespace NotesArrowSpectrum.Utilities
+namespace NotesSpectrum.Utilities
 {
     public static class ReflectionUtil
     {

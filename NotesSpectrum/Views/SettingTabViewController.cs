@@ -1,4 +1,4 @@
-﻿using NotesArrowSpectrum.Configuration;
+﻿using NotesSpectrum.Configuration;
 using BeatSaberMarkupLanguage;
 using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.GameplaySetup;
@@ -6,7 +6,7 @@ using BeatSaberMarkupLanguage.ViewControllers;
 using Zenject;
 
 
-namespace NotesArrowSpectrum.Views
+namespace NotesSpectrum.Views
 {
     [HotReload]
     internal class SettingTabViewController : BSMLAutomaticViewController, IInitializable
