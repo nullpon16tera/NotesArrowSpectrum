@@ -22,10 +22,10 @@ namespace NotesSpectrum.Views
 
         protected override void OnDestroy()
         {
-            GameplaySetup.instance.RemoveTab("NASpectrum");
+            GameplaySetup.instance.RemoveTab("Notes Spectrum");
             base.OnDestroy();
         }
 
-        public void Initialize() => GameplaySetup.instance.AddTab("NASpectrum", this.ResourceName, this);
+        public void Initialize() => GameplaySetup.instance.AddTab("Notes Spectrum", this.ResourceName, this);
     }
 }

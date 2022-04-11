@@ -66,19 +66,22 @@ namespace NotesSpectrum.Controllers
                 float noteHeight = 0.8f + width * 1.05f;
                 note.transform.localScale = new Vector3(noteWidth, noteHeight, offset);
 
+                float arrowWidth = 0.5f + width * 1.2f;
+                float arrowHeight = 0.5f + height * 1.2f;
                 MeshRenderer[] arrowMeshRenderers = ReflectionUtil.GetPrivateField<MeshRenderer[]>(noteVisuals, "_arrowMeshRenderers");
                 foreach (MeshRenderer arrowRenderer in arrowMeshRenderers)
                 {
-                    float arrowWidth = 0.5f + width * 1.2f;
-                    float arrowHeight = 0.5f + height * 1.2f;
-                    arrowRenderer.gameObject.transform.localScale = new Vector3(arrowWidth, arrowHeight, offset);
+                    if (arrowRenderer.name == "NoteArrow")
+                    {
+                        arrowRenderer.gameObject.transform.localScale = new Vector3(arrowWidth, arrowHeight, offset);
+                    }
                 }
 
+                float circleWidth = 0.5f + width / 1.5f;
+                float circleHeight = 0.5f + height / 1.5f;
                 MeshRenderer[] circleMeshRenderers = ReflectionUtil.GetPrivateField<MeshRenderer[]>(noteVisuals, "_circleMeshRenderers");
                 foreach (MeshRenderer circleRenderer in circleMeshRenderers)
                 {
-                    float circleWidth = 0.5f + width / 1.5f;
-                    float circleHeight = 0.5f + height / 1.5f;
                     circleRenderer.gameObject.transform.localScale = new Vector3(circleWidth, circleHeight, offset);
                 }
             }
